@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import { useState, lazy, Suspense } from 'react';
 import './App.css';
+import LoadingSuspense from './pages/LoadingSuspense';
+const Main = lazy(() => import('./pages/Main'));
+const Opening = lazy(() => import('./pages/Opening'));
 
 function App() {
+  const [isOpen, setisOpen] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Suspense fallback={<LoadingSuspense />}>
+      {isOpen ? 
+        (<Main />) :
+        (<Opening isOpen={isOpen} setisOpen={(e) => setisOpen(e)} />) 
+      }
+      </Suspense>
+    </>
   );
 }
 
