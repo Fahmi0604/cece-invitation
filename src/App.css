@@ -5,3 +5,8 @@
 body {
   background-color: #304221;
 }
+
+.gmap_canvas { 
+  overflow:hidden;
+  background:none!important;
+}

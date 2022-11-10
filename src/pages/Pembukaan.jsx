@@ -12,7 +12,7 @@ export default function Pembukaan() {
             <p className='text-3xl md:text-4xl font-[Alegreya]'>Robertus Romario</p>
             <p className='text-xl md:text-2xl font-[Alegreya]'>Putra dari Bapak Rudi H.Kurniawan Salim dan Ibu </p>
         </div> */}
-        <div className=" w-[90%] md:w-full mx-[5%] md:mx-0 text-center py-4 text-white rounded-2xl md:rounded-none">
+        <div className=" w-[90%] md:w-full mx-[5%] md:mx-0 bg-custom-white-md text-center py-4 text-white rounded-2xl md:rounded-none">
             <h2 className='text-4xl md:text-5xl font-[Alice] mb-8'>Pembukaan</h2>
 
             <p className='text-3xl md:text-4xl font-[Alegreya]'>Yenny Candrawati Salim Robertus Romario</p>

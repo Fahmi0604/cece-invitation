@@ -9,12 +9,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        frameFlower: "url('../public/assets/flowerframe.jpg')"
+        // frameFlower: "url('../public/assets/flowerframe.jpg')",
+        frameFlower: "url('../public/assets/bg_wed_mid1-rev2.svg')",
+        // frameFlower: "url('../public/assets/bg_wed_mid2-01.svg')",
+        bgFooter: "url('../public/assets/bg_wed_mid.svg')"
       },
       backgroundColor: {
         'custom-overlay': 'rgba(48, 66, 33, 0.3)',
         'custom-secondary': 'rgba(152, 182, 110, 0.5)',
-        'custom-white': 'rgba(255, 255, 255, 0.65)'
+        'custom-white-sm': 'rgba(255, 255, 255, 0.1)',
+        'custom-white-md': 'rgba(255, 255, 255, 0.3)'
       },
       keyframes: {
         wave: {

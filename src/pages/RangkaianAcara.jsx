@@ -1,15 +1,50 @@
 import React from 'react'
+import Countdown from '../component/Countdown'
 
 export default function RangkaianAcara() {
     return (
-        <div className='w-full mt-40'>
-            <h2 className='text-4xl md:text-5xl font-[Alice] mb-8'>Pembukaan</h2>
-            <div className="flex flex-col justify-center items-center w-[90%] md:w-full mx-[5%] md:mx-0 bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-16 md:py-28 text-[#282828] rounded-2xl md:rounded-none border-8 border-[#98B66E] md:border-none">
-
-                <p className='w-[80%] md:w-[50%] text-3xl md:text-4xl font-[Alegreya] mb-4 mt-20'>
-                    “Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia.”
-                </p>
-                <p className='text-xl md:text-3xl font-[Alegreya]'>Matius 19:6 TB</p>
+        <div className='w-full mt-20 md:mt-40'>
+            <h2 className='text-4xl md:text-5xl font-[Alice] mb-16 text-center text-white'>Rangkaian Acara</h2>
+            <div className='flex flex-col md:flex-row'>
+                <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] md:border-none mb-4">
+                    <p className='text-3xl md:text-4xl font-[Alegreya] mb-4'>Pemberkatan Nikah </p>
+                    <p className='text-2xl md:text-3xl font-[Alegreya] mb-2'>Sabtu, 14 Januari 2023 </p>
+                    <p className='text-xl md:text-2xl font-[Alegreya] mb-8 mx-4 md:mx-0'>Gereja Katolik St. Albertus de Trapani, Malang</p>
+                    <div className="relative text-right h-[300px] md:h-[400px] w-[95%] rounded flex justify-center mb-8">
+                        <div class="gmap_canvas h-[300px] md:h-[400px] w-[95%] rounded">
+                            <iframe title='maps1' width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Gereja%20Katolik%20St.%20Albertus%20de%20Trapani,%20Malang&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            {/* <a href="https://www.embedgooglemap.net"></a> */}
+                        </div>
+                    </div>
+                    <button className='bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Buka Maps</button>
+                    <Countdown tanggal={'2023-01-14'} />
+                </div>
+                <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] md:border-none mb-4">
+                    <p className='text-3xl md:text-4xl font-[Alegreya] mb-4'>Resepsi</p>
+                    <p className='text-2xl md:text-3xl font-[Alegreya] mb-2'>Sabtu, 14 Januari 2023 </p>
+                    <p className='text-xl md:text-2xl font-[Alegreya] mb-8 mx-4 md:mx-0'>Hall Setyaningjanji Waroeng Tani Jl. TPST, Mulyoagung, Dau, Malang</p>
+                    <div className="relative text-right h-[300px] md:h-[400px] w-[95%] rounded flex justify-center mb-8">
+                        <div class="gmap_canvas h-[300px] md:h-[400px] w-[95%] rounded">
+                        <iframe title='maps2' width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Hall%20Setyaningjanji%20Waroeng%20Tani%20%20Jl.%20TPST,%20Mulyoagung,%20Dau,%20Malang&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            {/* <a href="https://www.embedgooglemap.net"></a> */}
+                        </div>
+                    </div>
+                    <button className='bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Buka Maps</button>
+                    <Countdown tanggal={'2023-01-14'} />
+                </div>
+                <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] md:border-none mb-4">
+                    <p className='text-3xl md:text-4xl font-[Alegreya] mb-4'>Ngunduh Mantu</p>
+                    <p className='text-2xl md:text-3xl font-[Alegreya] mb-2'>Minggu, 15 Januari 2023 </p>
+                    <p className='text-xl md:text-2xl font-[Alegreya] mb-8 mx-4 md:mx-0'>Gedung PGSD UM,<br /> Blitar </p>
+                    <div className="relative text-right h-[300px] md:h-[400px] w-[95%] rounded flex justify-center mb-8">
+                        <div class="gmap_canvas h-[300px] md:h-[400px] w-[95%] rounded">
+                        <iframe title='maps3' width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Gedung%20PGSD%20UM,%20Blitar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            {/* <a href="https://www.embedgooglemap.net"></a> */}
+                        </div>
+                    </div>
+                    <button className='bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Buka Maps</button>
+                    <Countdown tanggal={'2023-01-15'} />
+                </div>
             </div>
         </div>
     )
