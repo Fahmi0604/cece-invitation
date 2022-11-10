@@ -6,7 +6,7 @@ export default function RangkaianAcara() {
         <div className='w-full mt-20 md:mt-40'>
             <h2 className='text-4xl md:text-5xl font-[Alice] mb-16 text-center text-white'>Rangkaian Acara</h2>
             <div className='flex flex-col md:flex-row'>
-                <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] md:border-none mb-4">
+                <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] md:border-none mb-10">
                     <p className='text-3xl md:text-4xl font-[Alegreya] mb-4'>Pemberkatan Nikah </p>
                     <p className='text-2xl md:text-3xl font-[Alegreya] mb-2'>Sabtu, 14 Januari 2023 </p>
                     <p className='text-xl md:text-2xl font-[Alegreya] mb-8 mx-4 md:mx-0'>Gereja Katolik St. Albertus de Trapani, Malang</p>
@@ -19,7 +19,7 @@ export default function RangkaianAcara() {
                     <button className='bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Buka Maps</button>
                     <Countdown tanggal={'2023-01-14'} />
                 </div>
-                <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] md:border-none mb-4">
+                <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] md:border-none mb-10">
                     <p className='text-3xl md:text-4xl font-[Alegreya] mb-4'>Resepsi</p>
                     <p className='text-2xl md:text-3xl font-[Alegreya] mb-2'>Sabtu, 14 Januari 2023 </p>
                     <p className='text-xl md:text-2xl font-[Alegreya] mb-8 mx-4 md:mx-0'>Hall Setyaningjanji Waroeng Tani Jl. TPST, Mulyoagung, Dau, Malang</p>
@@ -32,7 +32,7 @@ export default function RangkaianAcara() {
                     <button className='bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Buka Maps</button>
                     <Countdown tanggal={'2023-01-14'} />
                 </div>
-                <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] md:border-none mb-4">
+                <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] md:border-none mb-10">
                     <p className='text-3xl md:text-4xl font-[Alegreya] mb-4'>Ngunduh Mantu</p>
                     <p className='text-2xl md:text-3xl font-[Alegreya] mb-2'>Minggu, 15 Januari 2023 </p>
                     <p className='text-xl md:text-2xl font-[Alegreya] mb-8 mx-4 md:mx-0'>Gedung PGSD UM,<br /> Blitar </p>
