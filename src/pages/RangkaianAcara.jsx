@@ -2,6 +2,11 @@ import React from 'react'
 import Countdown from '../component/Countdown'
 
 export default function RangkaianAcara() {
+
+    function openTab(url) {
+        window.open(url);
+    }
+
     return (
         <div className='w-full mt-20 md:mt-40'>
             <h2 className='text-4xl md:text-5xl font-[Alice] mb-16 text-center text-white'>Rangkaian Acara</h2>
@@ -16,7 +21,7 @@ export default function RangkaianAcara() {
                             {/* <a href="https://www.embedgooglemap.net"></a> */}
                         </div>
                     </div>
-                    <button className='bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Buka Maps</button>
+                    <button onClick={() => openTab('https://www.google.com/maps/place/Gereja+Katolik+Paroki+St.+Albertus+de+Trapani,+Jl.+A.+Yani+No.22,+Blimbing,+Malang+City,+East+Java+65126/@-7.9423064,112.642214,17z/data=!4m6!3m5!1s0x2dd629c0433c5ccb:0x75690d6c79ab08f0!8m2!3d-7.9423064!4d112.642214!16s%2Fg%2F1hc8l758b')} className='bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Buka Maps</button>
                     <Countdown tanggal={'2023-01-14'} />
                 </div>
                 <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] md:border-none mb-10">
@@ -29,7 +34,8 @@ export default function RangkaianAcara() {
                             {/* <a href="https://www.embedgooglemap.net"></a> */}
                         </div>
                     </div>
-                    <button className='bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Buka Maps</button>
+                    
+                    <button onClick={() => openTab('https://g.page/waroengtani?share')} className='bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Buka Maps</button>
                     <Countdown tanggal={'2023-01-14'} />
                 </div>
                 <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] md:border-none mb-10">
@@ -42,7 +48,7 @@ export default function RangkaianAcara() {
                             {/* <a href="https://www.embedgooglemap.net"></a> */}
                         </div>
                     </div>
-                    <button className='bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Buka Maps</button>
+                    <button onClick={() => openTab('https://www.google.com/maps/place/W53C%2BQMX+Gedung+PGSD,+Kepanjen+Lor,+Kec.+Kepanjenkidul,+Kota+Blitar,+Jawa+Timur+66117/@-8.0955031,112.1717422,17z/data=!4m6!3m5!1s0x2e78ec6c0d190d67:0x32bad3884c2afc29!8m2!3d-8.0955031!4d112.1717422!16s%2Fg%2F11c6rh93zt')} className='bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Buka Maps</button>
                     <Countdown tanggal={'2023-01-15'} />
                 </div>
             </div>
