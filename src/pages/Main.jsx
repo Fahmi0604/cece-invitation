@@ -30,7 +30,7 @@ export default function Main() {
 
     useEffect(() => {
         if (myAudio.current) {
-            // myAudio.current.play();
+            myAudio.current.play();
             console.log('render');
         }
     }, [])
