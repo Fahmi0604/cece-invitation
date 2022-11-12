@@ -22,7 +22,7 @@ export default function Pembukaan() {
         <div className=" w-[90%] md:w-full mx-[5%] md:mx-0 bg-custom-white-md text-center py-4 text-white rounded-2xl md:rounded-none">
             
             {/* <div className='' data-aos="fade-up"> */}
-              <img src='/assets/plant1.svg' alt='' data-aos="fade-up" className='rotate-45'/>
+              {/* <img src='/assets/plant1.svg' alt='' data-aos="fade-up" className='rotate-45'/> */}
             {/* </div> */}
             {/* <div className='animate-waving h-30'>
               <img src='/assets/plant1.svg' alt='' />
