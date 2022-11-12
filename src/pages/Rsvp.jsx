@@ -22,7 +22,7 @@ export default function Rsvp() {
                             <option value="hadir">Hadir</option>
                         </select>
                     </div>
-                    <button className='w-full md:w-[25%] lg:w-[15%] bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Reservation via Whatsapp</button>
+                    <button className='w-full md:w-[40%] lg:w-[30%] bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Reservation via Whatsapp</button>
                     {/* <Countdown tanggal={'2023-01-14'} /> */}
                 </div>
             </div>
