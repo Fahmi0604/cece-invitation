@@ -15,7 +15,7 @@ module.exports = {
         bgFooter: "url('../public/assets/bg_wed_mid.svg')"
       },
       backgroundColor: {
-        'custom-overlay': 'rgba(48, 66, 33, 0.3)',
+        'custom-overlay': 'rgba(48, 66, 33, 0.5)',
         'custom-secondary': 'rgba(152, 182, 110, 0.5)',
         'custom-white-sm': 'rgba(255, 255, 255, 0.1)',
         'custom-white-md': 'rgba(255, 255, 255, 0.3)'
@@ -30,6 +30,19 @@ module.exports = {
           '50%': { transform: 'rotate(10.0deg)' },
           '60%': { transform: 'rotate(0.0deg)' },
           '100%': { transform: 'rotate(0.0deg)' },
+        },
+        waving: {
+          '0%': { transform: 'translate(0px, 0px);' },
+          '10%': { transform: 'translate(5px, 0px);'},
+          '20%': { transform: 'translate(10px, 0px);' },
+          '30%': { transform: 'translate(15px, 0px);' },
+          '40%': { transform: 'translate(20px, 0px);' },
+          '50%': { transform: 'translate(25px, 0px);' },
+          '60%': { transform: 'translate(20px, 0px);' },
+          '70%': { transform: 'translate(15px, 0px);' },
+          '80%': { transform: 'translate(10px, 0px);' },
+          '90%': { transform: 'translate(5px, 0px);' },
+          '100%': { transform: 'translate(0px, 0px);' },
         },
         scaleUpCenter: {
           'from': { opacity: 0, transform: 'scale(.7)' }
@@ -47,6 +60,7 @@ module.exports = {
         }
       },
       animation: {
+        'waving': 'waving 2s linear infinite',
         'scaleUpCenter': 'scaleUpCenter .4s ease-out both',
         'moveToBottom': 'moveToBottom .8s ease both',
         'moveToTop': 'moveToTop .8s ease both',
