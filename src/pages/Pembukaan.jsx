@@ -1,6 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Pembukaan() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className='w-full mt-10'>
         {/* <div className=" w-[90%] md:w-full mx-[5%] md:mx-0 bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-24 text-[#282828] rounded-2xl md:rounded-none">

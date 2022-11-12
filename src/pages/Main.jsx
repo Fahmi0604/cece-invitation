@@ -3,6 +3,8 @@ import React, { lazy, useEffect, useRef, useState } from 'react'
 const Pembukaan = lazy(() => import('./Pembukaan'))
 const Ayat = lazy(() => import('./Ayat'))
 const RangkaianAcara = lazy(() => import('./RangkaianAcara'))
+const Ucapan = lazy(() => import('./Ucapan'))
+const Rsvp = lazy(() => import('./Rsvp'))
 
 export default function Main() {
 
@@ -30,7 +32,7 @@ export default function Main() {
 
     useEffect(() => {
         if (myAudio.current) {
-            myAudio.current.play();
+            // myAudio.current.play();
             console.log('render');
         }
     }, [])
@@ -92,6 +94,8 @@ export default function Main() {
                 <Pembukaan />
                 <Ayat />
                 <RangkaianAcara />
+                <Ucapan />
+                <Rsvp />
             </main>
         </div>
     )
