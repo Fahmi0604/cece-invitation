@@ -7,14 +7,18 @@ export default function Ayat() {
     AOS.init();
   }, []);
   return (
-    <div className='w-full mt-20 md:mt-40'>
-        <div className="flex flex-col justify-center items-center w-[90%] md:w-full mx-[5%] md:mx-0 bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[100%] text-center py-16 md:py-28 text-[#282828] rounded-2xl md:rounded-none border-8 border-[#98B66E] md:border-none">
+    <div className='relative w-full mt-20 md:mt-40 bg-bgPolos bg-cover bg-[50%] md:py-[25%]'>
+      <div className='absolute top-[-10px] w-full h-4 bg-[#304221]' />
+      <img src="/assets/gurun3.svg" alt="g" className='object-none md:hidden' />
+        <div className="flex flex-col justify-center bg-[#27351b] items-center w-[90%] mx-[5%] md:mx-0 text-center py-16 md:py-28 text-[#f5f5f5] rounded-2xl md:rounded-none md:rounded-br-2xl md:rounded-tr-2xl" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
             <p className='w-[80%] md:w-[50%] text-3xl md:text-4xl font-[Alegreya] mb-4' data-aos="fade-up">
             “Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia.”
             </p>
             <p className='text-xl md:text-3xl font-[Alegreya]' data-aos="fade-up">Matius 19:6 TB</p>
         </div>
+      <img src="/assets/gurun2.svg" alt="g" className='md:hidden' />
+      <div className='absolute bottom-[-10px] w-full h-4 bg-[#304221]' />
     </div>
   )
 }

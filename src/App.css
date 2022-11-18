@@ -10,3 +10,7 @@ body {
   overflow:hidden;
   background:none!important;
 }
+
+.custom-linear-gradient {
+  background: linear-gradient(180deg, #314222 0%, #F2FFB9 100%);
+}

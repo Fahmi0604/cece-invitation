@@ -1,10 +1,13 @@
 import React, { lazy, useEffect, useRef, useState } from 'react'
+import Gift from './Gift'
 
 const Pembukaan = lazy(() => import('./Pembukaan'))
 const Ayat = lazy(() => import('./Ayat'))
 const RangkaianAcara = lazy(() => import('./RangkaianAcara'))
 const Ucapan = lazy(() => import('./Ucapan'))
 const Rsvp = lazy(() => import('./Rsvp'))
+const Protokol = lazy(() => import('./Protokol'))
+const Footer = lazy(() => import('./Footer'))
 
 export default function Main() {
 
@@ -96,6 +99,9 @@ export default function Main() {
                 <RangkaianAcara />
                 <Ucapan />
                 <Rsvp />
+                <Gift />
+                <Protokol />
+                <Footer />
             </main>
         </div>
     )

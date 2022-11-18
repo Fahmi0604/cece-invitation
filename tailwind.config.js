@@ -11,6 +11,7 @@ module.exports = {
       backgroundImage: {
         // frameFlower: "url('../public/assets/flowerframe.jpg')",
         frameFlower: "url('../public/assets/bg_wed_mid1-rev2.svg')",
+        bgPolos: "url('../public/assets/bg-polos.svg')",
         // frameFlower: "url('../public/assets/bg_wed_mid2-01.svg')",
         bgFooter: "url('../public/assets/bg_wed_mid.svg')"
       },
