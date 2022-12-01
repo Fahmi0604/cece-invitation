@@ -1,19 +1,20 @@
-import { useState, lazy, Suspense } from 'react';
+import { useEffect, useState, lazy} from 'react';
+import { useParams } from 'react-router-dom';
 import './App.css';
-import LoadingSuspense from './pages/LoadingSuspense';
 const Main = lazy(() => import('./pages/Main'));
 const Opening = lazy(() => import('./pages/Opening'));
 
 function App() {
+  
+  const { nama } = useParams();
   const [isOpen, setisOpen] = useState(false);
+
   return (
     <>
-      <Suspense fallback={<LoadingSuspense />}>
       {isOpen ? 
         (<Main />) :
-        (<Opening isOpen={isOpen} setisOpen={(e) => setisOpen(e)} />) 
+        (<Opening nama={nama} isOpen={isOpen} setisOpen={(e) => setisOpen(e)} />) 
       }
-      </Suspense>
     </>
   );
 }

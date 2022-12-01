@@ -15,7 +15,7 @@ export default function RangkaianAcara() {
 
     return (
         <div className='w-full mt-20 md:mt-40'>
-            <h2 className='text-4xl md:text-5xl font-[Alice] mb-16 text-center text-white'>Rangkaian Acara</h2>
+            <h2 className='text-4xl md:text-5xl font-[Cinzel] mb-16 text-center text-white'>Rangkaian Acara</h2>
             <div className='flex flex-col md:flex-row'>
                 <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-frameFlower bg-no-repeat bg-cover bg-[55%] md:bg-[55%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl border-8 border-[#98B66E] mb-10" data-aos="zoom-in">
                     <p className='text-3xl md:text-4xl font-[Alegreya] mb-4'>Pemberkatan Nikah </p>

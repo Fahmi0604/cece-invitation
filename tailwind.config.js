@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primary': '#0B1A23',
+        'secondary': '#'
+      },
       backgroundImage: {
         // frameFlower: "url('../public/assets/flowerframe.jpg')",
         frameFlower: "url('../public/assets/bg_wed_mid1-rev2.svg')",

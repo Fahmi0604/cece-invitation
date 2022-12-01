@@ -20,7 +20,7 @@ export default function Pembukaan() {
             <p className='text-xl md:text-2xl font-[Alegreya]'>Putra dari Bapak Rudi H.Kurniawan Salim dan Ibu </p>
         </div> */}
         <div className=" w-[90%] md:w-full mx-[5%] md:mx-0 bg-custom-white-md text-center py-4 text-white rounded-2xl md:rounded-none">
-            <h2 className='text-4xl md:text-5xl font-[Alice] mb-8'>Groom & Bride</h2>
+            <h2 className='text-4xl md:text-5xl font-[Cinzel] mb-8'>Groom & Bride</h2>
             
             <p className='text-3xl md:text-4xl font-[Alegreya]'>Robertus Romario Harvey Kurniawan</p>
             <p className='text-xl md:text-2xl font-[Alegreya] mb-4'>Putra dari Rudi Kurniawan Salim dan Susanti</p>

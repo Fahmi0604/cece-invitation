@@ -5,7 +5,7 @@ export default function Ucapan() {
         <div className='w-full mt-20 md:mt-40 bg-frameFlower bg-cover object-cover bg-[60%] md:bg-[60%]'>
             <img src="/assets/gurun3.svg" alt="g" className='object-none md:hidden' />
             <div className='pt-[25%] pb-[0] md:py-[10%]'>
-                <h2 className='text-4xl md:text-5xl font-[Alice] mb-16 text-center text-[#304221]'>Ucapkan Sesuatu Untuk Kami Berdua</h2>
+                <h2 className='text-4xl md:text-5xl font-[Cinzel] mb-16 text-center text-[#304221]'>Ucapkan Sesuatu Untuk Kami Berdua</h2>
                 <div className='flex flex-col md:flex-row'>
                     <div className="flex flex-col p-4 w-[90%] md:w-[80%] mx-[5%] md:mx-[10%] bg-[#5A684E] py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl mb-10" data-aos="zoom-in">
                         <div className='mb-4'>

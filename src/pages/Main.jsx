@@ -70,8 +70,8 @@ export default function Main() {
                 <img ref={bg2} src="./assets/bg_wed2.svg" alt="paralax2" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-0 mt-[-140px]' />
                 <div className="relative flex flex-col justify-center items-center mt-[20vh] md:mt-[30vh] z-[2]">
                     <p className='text-5xl md:text-7xl text-white font-[Alegreya] mb-4'>The Weeding of</p>
-                    <h1 className='hidden md:block text-white text-9xl font-[Alice] text-center bg-custom-overlay px-12 pb-1 md:pb-5 rounded-full'>Yenny & Rio</h1>
-                    <h1 className='block md:hidden text-white text-7xl font-[Alice] text-center bg-custom-overlay py-20 px-4 rounded-full'>Yenny <br/> & <br /> Rio</h1>
+                    <h1 className='hidden md:block text-white text-9xl font-[Cinzel] text-center bg-custom-overlay px-12 pb-1 md:pb-5 rounded-full'>Yenny & Rio</h1>
+                    <h1 className='block md:hidden text-white text-7xl font-[Cinzel] text-center bg-custom-overlay py-20 px-4 rounded-full'>Yenny <br/> & <br /> Rio</h1>
                 </div>
                 <div className="w-full h-[17.5vh] bg-[#304221] z-[2]">
                     <div className="flex justify-center items-center hidden">
