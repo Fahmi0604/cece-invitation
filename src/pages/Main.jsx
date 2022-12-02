@@ -66,8 +66,8 @@ export default function Main() {
                 </button>
             </div>
             <section className='relative w-full h-[130vh] overflow-hidden flex flex-col justify-between items-center'>
-                <img src="./assets/home-mobile.jpg" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] hidden md:block' />
-                <img src="./assets/home-mobile.jpg" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] block md:hidden' />
+                <img src="./assets/home-mobile.webp" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] hidden md:block' />
+                <img src="./assets/home-mobile.webp" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] block md:hidden' />
                 <div className="relative flex flex-col justify-center items-center mt-[10vh] md:mt-[8vh] z-[2]">
                     <p className='text-[32px] md:text-4xl text-primary font-[Cinzel] mb-4'>The Weeding of</p>
                     <h1 className='hidden md:block text-primary text-9xl font-[Cinzel] text-center px-12 pb-1 md:pb-5 rounded-full'>Rio & Yenny</h1>

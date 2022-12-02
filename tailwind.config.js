@@ -12,13 +12,6 @@ module.exports = {
         'primary': '#0B1A23',
         'secondary': '#'
       },
-      backgroundImage: {
-        // frameFlower: "url('../public/assets/flowerframe.jpg')",
-        frameFlower: "url('../public/assets/bg_wed_mid1-rev2.svg')",
-        bgPolos: "url('../public/assets/bg-polos.svg')",
-        // frameFlower: "url('../public/assets/bg_wed_mid2-01.svg')",
-        bgFooter: "url('../public/assets/bg_wed_mid.svg')"
-      },
       backgroundColor: {
         'custom-overlay': 'rgba(48, 66, 33, 0.5)',
         'custom-secondary': 'rgba(152, 182, 110, 0.5)',

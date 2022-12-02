@@ -14,7 +14,7 @@ export default function ({ setisOpen, nama}) {
     
   return (
     <div className={`relative ${click ? 'animate-moveToTop z-[-999]' : 'z-[999'}`}>
-        <img src="./assets/opening.jpg" alt="opening" className='absolute w-full h-screen object-cover pointer-events-none z-0' />
+        <img src="./assets/opening.webp" alt="opening" className='absolute w-full h-screen object-cover pointer-events-none z-0' />
         {/* <div className='absolute z-[1]'>
             p
         </div> */}

@@ -22,7 +22,7 @@ export default function Rsvp() {
         <Toaster />
         <div className='w-full mt-20 md:mt-40'>
             <h2 className='text-3xl md:text-5xl font-[Cinzel] mb-4 text-center text-white'>RSVP</h2>
-            <p className='text-2xl md:text-3xl font-[Cinzel] mb-16 text-center text-white'>Silahkan Konfirmasi Kehadiran Anda</p>
+            <p className='text-2xl md:text-3xl font-[Cinzel] mb-16 text-center text-white mx-4'>Silahkan Konfirmasi Kehadiran Anda</p>
             <div className='flex flex-col md:flex-row'>
                 <div className="flex flex-col p-4 w-[90%] md:w-[80%] mx-[5%] md:mx-[10%] bg-custom-white-sm py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl mb-10" data-aos="zoom-in">
                     <div className='mb-4'>
