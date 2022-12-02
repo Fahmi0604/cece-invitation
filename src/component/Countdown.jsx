@@ -20,7 +20,7 @@ export default function Countdown({tanggal}) {
     }, []);
 
   return (
-    <div className='w-full flex justify-between text-white mt-10 font-[Alegreya]'>
+    <div className='w-full flex justify-between text-white mt-10 font-[Cinzel]'>
         <div className='w-[20%] mx-[2.5%] bg-[#272726] py-3 rounded'>
             <span className='text-2xl'>{days}</span> <br /> days
         </div>

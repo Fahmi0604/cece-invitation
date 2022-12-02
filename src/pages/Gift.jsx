@@ -32,10 +32,10 @@ export default function Gift() {
         <>
             <Toaster />
             <div className='w-full mt-20 md:mt-40'>
-                <h2 className='text-4xl md:text-5xl font-[Cinzel] mb-16 text-center text-white'>Wedding Gift</h2>
+                <h2 className='text-3xl md:text-5xl font-[Cinzel] mb-16 text-center text-white'>Wedding Gift</h2>
                 <div className="flex flex-col md:flex-row justify-center md:justify-around items-center w-[100%] text-center py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl mb-10" data-aos="zoom-in">
-                    <button onClick={() => openModal("8160507382","Yenny Chandrawati S")} className='w-[50%] md:w-[30%] bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full mb-8'>Yenny</button>
-                    <button onClick={() => openModal("8705278462", "Robertus Romario Harvey K")} className='w-[50%] md:w-[30%] bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full mb-8'>Rio</button>
+                    <button onClick={() => openModal("8160507382","Yenny Chandrawati S")} className='w-[50%] md:w-[30%] bg-custom-white-md text-white font-[Cinzel] text-2xl px-4 py-2 rounded-full mb-8'>Yenny</button>
+                    <button onClick={() => openModal("8705278462", "Robertus Romario Harvey K")} className='w-[50%] md:w-[30%] bg-custom-white-md text-white font-[Cinzel] text-2xl px-4 py-2 rounded-full mb-8'>Rio</button>
                 </div>
             </div>
             <Transition appear show={isOpen} as={Fragment}>

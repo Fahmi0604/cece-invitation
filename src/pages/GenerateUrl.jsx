@@ -62,7 +62,7 @@ Terima kasih banyak atas perhatiannya.`);
     return (
         <>
             <Toaster />
-            <div className='w-full min-h-screen py-8 bg-[#304221]'>
+            <div className='w-full min-h-screen py-8 bg-primary'>
                 <h2 className='text-3xl md:text-4xl font-[Cinzel] mb-4 text-center text-white'>Kirim Undangan Untuk Para Tamu</h2>
                 <p className='px-[15%] text-xl md:text-xl font-[Cinzel] mb-16 text-center text-white'>Buat undangan jadi lebih ekslusif dan personal di setiap undangan yang akan dikirimkan. Silahkan Generate Link nya di bawah ini:</p>
                 <div className='flex flex-col'>
@@ -90,7 +90,7 @@ Terima kasih banyak atas perhatiannya.`);
                             <option value="hadir">Hadir</option>
                         </select>
                     </div> */}
-                        <button onClick={() => generate()} className='w-full md:w-[40%] lg:w-[30%] bg-[#272726] text-white font-[Alegreya] text-2xl px-4 py-2 rounded-full'>Generate</button>
+                        <button onClick={() => generate()} className='w-full md:w-[40%] lg:w-[30%] bg-custom-white-md text-white font-[Cinzel] text-2xl px-4 py-2 rounded-full'>Generate</button>
                         {/* <Countdown tanggal={'2023-01-14'} /> */}
                     </div>
 
@@ -102,8 +102,8 @@ Terima kasih banyak atas perhatiannya.`);
                                 <div className='bg-white px-4 py-8 mb-4 rounded-md' key={i}>
                                     <label htmlFor="first_name" className="block mb-4 text-lg font-medium text-[#282828]">Nama Tamu : {e.nama}</label>
                                     {/* <div className='flex'> */}
-                                    <a href={e.link} target={'_blank'} className='w-fit md:w-[40%] lg:w-[30%] bg-[#272726] text-white font-[Alegreya] text-lg px-4 py-2 rounded-full'>Share Whatsapp</a>
-                                    <button onClick={() => deleteListGenerate(e.id)} className='w-fit md:w-[40%] lg:w-[30%] bg-[#272726] text-white font-[Alegreya] text-lg px-4 py-2 rounded-full'>hapus</button>
+                                    <a href={e.link} target={'_blank'} className='w-fit md:w-[40%] lg:w-[30%] bg-[#272726] text-white font-[Cinzel] text-lg px-4 py-2 rounded-full'>Share Whatsapp</a>
+                                    <button onClick={() => deleteListGenerate(e.id)} className='w-fit md:w-[40%] lg:w-[30%] bg-[#272726] text-white font-[Cinzel] text-lg px-4 py-2 rounded-full'>hapus</button>
                                     {/* </div> */}
                                 </div>
                             ))}

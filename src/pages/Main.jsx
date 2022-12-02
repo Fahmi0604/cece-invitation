@@ -66,14 +66,14 @@ export default function Main() {
                 </button>
             </div>
             <section className='relative w-full h-[130vh] overflow-hidden flex flex-col justify-between items-center'>
-                <img ref={bg1} src="./assets/bg_wed1.1.svg" alt="paralax1" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1]' />
-                <img ref={bg2} src="./assets/bg_wed2.svg" alt="paralax2" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-0 mt-[-140px]' />
-                <div className="relative flex flex-col justify-center items-center mt-[20vh] md:mt-[30vh] z-[2]">
-                    <p className='text-5xl md:text-7xl text-white font-[Alegreya] mb-4'>The Weeding of</p>
-                    <h1 className='hidden md:block text-white text-9xl font-[Cinzel] text-center bg-custom-overlay px-12 pb-1 md:pb-5 rounded-full'>Yenny & Rio</h1>
-                    <h1 className='block md:hidden text-white text-7xl font-[Cinzel] text-center bg-custom-overlay py-20 px-4 rounded-full'>Yenny <br/> & <br /> Rio</h1>
+                <img src="./assets/home-mobile.jpg" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] hidden md:block' />
+                <img src="./assets/home-mobile.jpg" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] block md:hidden' />
+                <div className="relative flex flex-col justify-center items-center mt-[10vh] md:mt-[8vh] z-[2]">
+                    <p className='text-[32px] md:text-4xl text-primary font-[Cinzel] mb-4'>The Weeding of</p>
+                    <h1 className='hidden md:block text-primary text-9xl font-[Cinzel] text-center px-12 pb-1 md:pb-5 rounded-full'>Rio & Yenny</h1>
+                    <h1 className='block md:hidden text-primary text-5xl font-[Cinzel] text-center px-4 rounded-full'>Rio <br/> & <br /> Yenny</h1>
                 </div>
-                <div className="w-full h-[17.5vh] bg-[#304221] z-[2]">
+                {/* <div className="w-full h-[17.5vh] bg-[#304221] z-[2]">
                     <div className="flex justify-center items-center hidden">
                         <div className="w-1/5 h-[20vh] flex justify-center items-center">
                             <a href="#" className='text-lg text-white decoration-none bg-[#98B66E] py-2 px-7 rounded-full'>
@@ -91,9 +91,9 @@ export default function Main() {
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
-            <main className='w-full bg-[#304221] z-[4]'>
+            <main className='w-full bg-primary z-[4]'>
                 <Pembukaan />
                 <Ayat />
                 <RangkaianAcara />
