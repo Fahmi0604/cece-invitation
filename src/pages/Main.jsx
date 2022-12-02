@@ -18,20 +18,20 @@ export default function Main() {
 
     const [isPlayingAudio, setisPlayingAudio] = useState(true);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY;
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const currentScrollY = window.scrollY;
 
-            bg1.current.style.top = -currentScrollY * 0.15 + 'px';
-            bg2.current.style.top = currentScrollY * 0.25 + 'px';
-            // text.current.style.top = currentScrollY * 0.25 + 'px';
+    //         bg1.current.style.top = -currentScrollY * 0.15 + 'px';
+    //         bg2.current.style.top = currentScrollY * 0.25 + 'px';
+    //         // text.current.style.top = currentScrollY * 0.25 + 'px';
             
-        };
+    //     };
 
-        window.addEventListener("scroll", handleScroll, { passive: true });
+    //     window.addEventListener("scroll", handleScroll, { passive: true });
 
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    //     return () => window.removeEventListener("scroll", handleScroll);
+    // }, []);
 
     useEffect(() => {
         if (myAudio.current) {

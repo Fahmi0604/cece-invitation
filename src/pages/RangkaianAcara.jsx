@@ -22,8 +22,8 @@ export default function RangkaianAcara() {
                     <p className='text-2xl md:text-3xl font-[Cinzel] mb-2'>Sabtu, 14 Januari 2023 </p>
                     <p className='text-xl md:text-2xl font-[Cinzel] mb-8 mx-4 md:mx-0'>Gereja Katolik St. Albertus de Trapani, Malang</p>
                     <div className="relative text-right h-[300px] md:h-[400px] w-[95%] rounded flex justify-center mb-8">
-                        <div class="gmap_canvas h-[300px] md:h-[400px] w-[95%] rounded">
-                            <iframe title='maps1' width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Gereja%20Katolik%20St.%20Albertus%20de%20Trapani,%20Malang&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <div className="gmap_canvas h-[300px] md:h-[400px] w-[95%] rounded">
+                            <iframe title='maps1' width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Gereja%20Katolik%20St.%20Albertus%20de%20Trapani,%20Malang&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                             {/* <a href="https://www.embedgooglemap.net"></a> */}
                         </div>
                     </div>
@@ -35,8 +35,8 @@ export default function RangkaianAcara() {
                     <p className='text-2xl md:text-3xl font-[Cinzel] mb-2'>Sabtu, 14 Januari 2023 </p>
                     <p className='text-xl md:text-2xl font-[Cinzel] mb-8 mx-4 md:mx-0'>Hall Setyaningjanji Waroeng Tani Jl. TPST, Mulyoagung, Dau, Malang</p>
                     <div className="relative text-right h-[300px] md:h-[400px] w-[95%] rounded flex justify-center mb-8">
-                        <div class="gmap_canvas h-[300px] md:h-[400px] w-[95%] rounded">
-                        <iframe title='maps2' width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Hall%20Setyaningjanji%20Waroeng%20Tani%20%20Jl.%20TPST,%20Mulyoagung,%20Dau,%20Malang&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <div className="gmap_canvas h-[300px] md:h-[400px] w-[95%] rounded">
+                        <iframe title='maps2' width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Hall%20Setyaningjanji%20Waroeng%20Tani%20%20Jl.%20TPST,%20Mulyoagung,%20Dau,%20Malang&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                             {/* <a href="https://www.embedgooglemap.net"></a> */}
                         </div>
                     </div>
@@ -49,8 +49,8 @@ export default function RangkaianAcara() {
                     <p className='text-2xl md:text-3xl font-[Cinzel] mb-2'>Minggu, 15 Januari 2023 </p>
                     <p className='text-xl md:text-2xl font-[Cinzel] mb-8 mx-4 md:mx-0'>Gedung PGSD UM,<br /> Blitar </p>
                     <div className="relative text-right h-[300px] md:h-[400px] w-[95%] rounded flex justify-center mb-8">
-                        <div class="gmap_canvas h-[300px] md:h-[400px] w-[95%] rounded">
-                        <iframe title='maps3' width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Gedung%20PGSD%20UM,%20Blitar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <div className="gmap_canvas h-[300px] md:h-[400px] w-[95%] rounded">
+                        <iframe title='maps3' width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Gedung%20PGSD%20UM,%20Blitar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                             {/* <a href="https://www.embedgooglemap.net"></a> */}
                         </div>
                     </div>

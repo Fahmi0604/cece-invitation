@@ -26,17 +26,17 @@ export default function Rsvp() {
             <div className='flex flex-col md:flex-row'>
                 <div className="flex flex-col p-4 w-[90%] md:w-[80%] mx-[5%] md:mx-[10%] bg-custom-white-sm py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl mb-10" data-aos="zoom-in">
                     <div className='mb-4'>
-                        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nama</label>
-                        <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5" placeholder="Nama" onChange={(e) => setNama(e.target.value)} />
+                        <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nama</label>
+                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5" placeholder="Nama" onChange={(e) => setNama(e.target.value)} />
                     </div>
                     <div className='mb-4'>
-                        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alamat</label>
-                        <textarea rows={5} type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5" placeholder="Alamat" onChange={(e) => setAlamat(e.target.value)} />
+                        <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alamat</label>
+                        <textarea rows={5} type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5" placeholder="Alamat" onChange={(e) => setAlamat(e.target.value)} />
                     </div>
                     <div className='mb-4'>
-                        <label for="konfirmasi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Konfirmasi</label>
-                        <select id="konfirmasi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5" onChange={(e) => setkonfirmasi(e.target.value)}>
-                            <option value="tidak-hadir" selected>Tidak Hadir</option>
+                        <label htmlFor="konfirmasi" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Konfirmasi</label>
+                        <select id="konfirmasi" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5" onChange={(e) => setkonfirmasi(e.target.value)}>
+                            <option value="tidak-hadir">Tidak Hadir</option>
                             <option value="hadir">Hadir</option>
                         </select>
                     </div>
