@@ -14,14 +14,14 @@ export default function Pembukaan() {
         <div className='flex flex-col md:flex-row md:mt-20'>
 
           <div className='flex flex-col items-center mb-14 md:w-1/2' data-aos="zoom-in">
-            <img src="./assets/groom.webp" alt="groom" className='mb-8' />
+            <img src="./assets/groom.svg" alt="groom" className='mb-8' />
             <p className='text-3xl md:text-4xl font-[Cinzel] mb-4'>Robertus Romario Harvey Kurniawan</p>
             <p className='text-xl md:text-2xl font-[Cinzel]'>Putra dari <br /> Rudy H. Kurniawan <br /> dan <br /> Sri Susanti Indri Purwati</p>
           </div>
           {/* <p className='text-5xl font-[Cinzel] mb-4'>&</p> */}
 
           <div className='flex flex-col items-center md:w-1/2' data-aos="zoom-in">
-            <img src="./assets/bride.webp" alt="bride" className='mb-8' />
+            <img src="./assets/bride.svg" alt="bride" className='mb-8' />
             <p className='text-3xl md:text-4xl font-[Cinzel] mb-4'>Yenny Chandrawati Salim</p>
             <p className='text-xl md:text-2xl font-[Cinzel]'>Putri dari <br /> Pendi Salim <br /> dan <br /> Indrajayani Soetrisno</p>
           </div>
