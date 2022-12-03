@@ -55,6 +55,14 @@ module.exports = {
         },
         scaleUp: {
           'from': { opacity: 0, transform: 'scale(.8)' }
+        },
+        scalee: {
+          'from': { transform: 'scale(1.25)' },
+	        'to': { transform: 'scale(1.5)' }
+        },
+        rotatee: {
+          'from': { transform: 'rotate()' },
+	        'to': { transform: 'rotate(10deg) scale(1.3)' }
         }
       },
       animation: {
@@ -62,7 +70,9 @@ module.exports = {
         'scaleUpCenter': 'scaleUpCenter .4s ease-out both',
         'moveToBottom': 'moveToBottom .8s ease both',
         'moveToTop': 'moveToTop .8s ease both',
-        'scaleUp': 'scaleUp .7s ease both'
+        'scaleUp': 'scaleUp .7s ease both',
+        'scalee': 'scalee 5s alternate both',
+        'rotatee': 'rotatee 4s alternate infinite'
       }
     },
   },

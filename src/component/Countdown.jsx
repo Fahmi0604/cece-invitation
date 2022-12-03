@@ -21,16 +21,16 @@ export default function Countdown({tanggal}) {
 
   return (
     <div className='w-full flex justify-between text-white mt-10 font-[Cinzel]'>
-        <div className='w-[20%] mx-[2.5%] bg-[#272726] py-3 rounded'>
+        <div className='w-[20%] mx-[2.5%] bg-[#272726] py-3 rounded text-sm md:text-base'>
             <span className='text-2xl'>{days}</span> <br /> days
         </div>
-        <div className='w-[20%] mx-[2.5%] bg-[#272726] py-3 rounded'>
+        <div className='w-[20%] mx-[2.5%] bg-[#272726] py-3 rounded text-sm md:text-base'>
             <span className='text-2xl'>{hours}</span> <br /> hours
         </div>
-        <div className='w-[20%] mx-[2.5%] bg-[#272726] py-3 rounded'>
+        <div className='w-[20%] mx-[2.5%] bg-[#272726] py-3 rounded text-sm md:text-base'>
             <span className='text-2xl'>{minutes}</span> <br /> minutes
         </div>
-        <div className='w-[20%] mx-[2.5%] bg-[#272726] py-3 rounded'>
+        <div className='w-[20%] mx-[2.5%] bg-[#272726] py-3 rounded text-sm md:text-base'>
             <span className='text-2xl'>{seconds}</span> <br /> second
         </div>
     </div>
