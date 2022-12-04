@@ -41,8 +41,8 @@ export default function Ucapan() {
         <>
         <Toaster />
             <div className='flex justify-between mb-8 overflow-hidden py-10'>
-                <img src="./assets/flower-left.svg" alt="" className='w-1/2 lg:h-[80vh] -ml-[20%] animate-rotatee delay-500' />
-                <img src="./assets/flower-right.svg" alt="" className='w-[40%] lg:h-[90vh] -mr-[20%] animate-rotatee delay-1000' />
+                <img src="/assets/flower-left.svg" alt="" className='w-1/2 lg:h-[80vh] -ml-[20%] animate-rotatee delay-500' />
+                <img src="/assets/flower-right.svg" alt="" className='w-[40%] lg:h-[90vh] -mr-[20%] animate-rotatee delay-1000' />
             </div>
         <div className='w-full mt-5 md:mt-4'>
             <div className='pb-[0] md:py-[10%]'>

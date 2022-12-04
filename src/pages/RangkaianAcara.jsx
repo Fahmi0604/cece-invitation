@@ -19,7 +19,7 @@ export default function RangkaianAcara() {
             <div className='flex flex-col md:flex-row'>
                 <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-custom-white-md text-center py-8 px-4 md:py-10 text-white rounded-2xl md:rounded-xl mb-10" data-aos="zoom-in">
 
-                    <img src="./assets/cincin.svg" alt="cincin" className='w-[25%] mb-4' />
+                    <img src="/assets/cincin.svg" alt="cincin" className='w-[25%] mb-4' />
 
                     <p className='text-2xl md:text-4xl font-[Cinzel] mb-4'>Pemberkatan Nikah </p>
                     <p className='text-lg md:text-3xl font-[Cinzel] mb-2'>Sabtu, 14 Januari 2023 </p>
@@ -35,7 +35,7 @@ export default function RangkaianAcara() {
                 </div>
                 <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-custom-white-md text-center py-8 px-4 md:py-10 text-white rounded-2xl md:rounded-xl mb-10" data-aos="zoom-in">
                     
-                    <img src="./assets/drink.svg" alt="cincin" className='w-[25%] mb-4' />
+                    <img src="/assets/drink.svg" alt="cincin" className='w-[25%] mb-4' />
 
                     <p className='text-2xl md:text-4xl font-[Cinzel] mb-4'>Resepsi</p>
                     <p className='text-lg md:text-3xl font-[Cinzel] mb-2'>Sabtu, 14 Januari 2023 </p>
@@ -52,7 +52,7 @@ export default function RangkaianAcara() {
                 </div>
                 <div className="flex flex-col items-center w-[90%] md:w-[30%] mx-[5%] md:mx-[1.5%] bg-custom-white-md text-center py-8 px-4 md:py-10 text-white rounded-2xl md:rounded-xl mb-10" data-aos="zoom-in">
                     
-                    <img src="./assets/terompet.svg" alt="cincin" className='w-[25%] mb-4' />
+                    <img src="/assets/terompet.svg" alt="cincin" className='w-[25%] mb-4' />
                     
                     <p className='text-2xl md:text-4xl font-[Cinzel] mb-4'>Ngunduh Mantu</p>
                     <p className='text-lg md:text-3xl font-[Cinzel] mb-2'>Minggu, 15 Januari 2023 </p>

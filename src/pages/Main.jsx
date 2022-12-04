@@ -55,7 +55,7 @@ export default function Main() {
     return (
         <div className='min-h-[2500px]'>
             <div className='fixed w-full top-0 flex justify-center z-[5] pt-4'>
-                <audio ref={myAudio} src="./assets/backsound.mp3" loop />
+                <audio ref={myAudio} src="/assets/backsound.mp3" loop />
                 <button onClick={() => handleAudio()} className="w-auto bg-transparent text-white border-none cursor-pointer">
                     { isPlayingAudio ? (<svg id="btn-pause" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-14 h-14">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9v6m-4.5 0V9M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -67,8 +67,8 @@ export default function Main() {
                 </button>
             </div>
             <section className='relative w-full h-[130vh] overflow-hidden flex flex-col justify-between items-center'>
-                <img src="./assets/home-mobile.webp" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] hidden md:block' />
-                <img src="./assets/home-mobile.webp" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] block md:hidden' />
+                <img src="/assets/home-mobile.webp" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] hidden md:block' />
+                <img src="/assets/home-mobile.webp" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] block md:hidden' />
                 <div className="relative flex flex-col justify-center items-center mt-[10vh] md:mt-[8vh] z-[2]">
                     <p className='text-[32px] md:text-4xl text-primary font-[Cinzel] mb-4'>The Wedding of</p>
                     <h1 className='hidden md:block text-primary text-9xl font-[Cinzel] text-center px-12 pb-1 md:pb-5 rounded-full'>Rio & Yenny</h1>
