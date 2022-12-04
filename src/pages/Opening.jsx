@@ -13,7 +13,7 @@ export default function ({ setisOpen, nama}) {
     }, [click])
     
   return (
-    <div className={`relative ${click ? 'animate-moveToTop z-[-999]' : 'z-[999'} md:overflow-hidden bg-white`}>
+    <div className={`h-screen relative ${click ? 'animate-moveToTop z-[-999]' : 'z-[999'} md:overflow-hidden bg-white`}>
         <img src="./assets/opening.webp" alt="opening" className='absolute w-full md:w-[75%] h-screen object-cover pointer-events-none z-0 md:mt-[50vh] md:mx-[12.5%]' />
         {/* <div className='absolute z-[1]'>
             p

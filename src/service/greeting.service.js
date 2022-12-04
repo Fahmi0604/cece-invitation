@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = 'http://localhost:3001/api' + "/greeting";
+const API_URL = 'https://api.dejitaru-invite.com/api/' + "/greeting";
 
 const createGreeting = (data) => {
   return axios.post(API_URL + "/", data, { headers: {'Content-Type': 'application/json'} });

@@ -12,7 +12,7 @@ export default function Ucapan() {
 
     const createGreeting = () => {
         if (namaTamu !== '' && pesan !== '') {
-            GreetingService.createGreeting({id_user: 1, nama_tamu: namaTamu, konfirmasi: true, pesan: pesan}).then(res => {
+            GreetingService.createGreeting({id_user: 1, nama_tamu: namaTamu, konfirmasi: konfirmasi, pesan: pesan}).then(res => {
                 getAllGreeting();
                 toast.success('Data berhasil dibuat', { position: 'bottom-center'});
               }, (err) => {
@@ -50,18 +50,18 @@ export default function Ucapan() {
                 <div className='flex flex-col md:flex-row' data-aos="zoom-in">
                     <div className="flex flex-col p-4 w-[90%] md:w-[80%] mx-[5%] md:mx-[10%] bg-custom-white-sm py-8 md:py-10 text-[#282828] rounded-2xl md:rounded-xl mb-10">
                         <div className='mb-4'>
-                            <label htmlFor="nama" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nama</label>
+                            <label htmlFor="nama" className="block mb-2 text-sm font-medium text-gray-300">Nama</label>
                             <input onChange={(e) => setNamaTamu(e.target.value)} type="text" id="nama" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5" placeholder="John" />
                         </div>
                         <div className='mb-4'>
-                            <label htmlFor="konfirmasi" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Konfirmasi</label>
+                            <label htmlFor="konfirmasi" className="block mb-2 text-sm font-medium text-gray-300">Konfirmasi</label>
                             <select id="konfirmasi" onChange={(e) => setKonfirmasi(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5">
                                 <option value={false}>Tidak Hadir</option>
                                 <option value={true} >Hadir</option>
                             </select>
                         </div>
                         <div className='mb-4'>
-                            <label htmlFor="pesan" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ucapan & Doa</label>
+                            <label htmlFor="pesan" className="block mb-2 text-sm font-medium text-gray-300">Ucapan & Doa</label>
                             <textarea onChange={(e) => setPesan(e.target.value)} rows={5} type="text" id="pesan" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5" placeholder="Masukan pesan" />
                         </div>
                         <button onClick={() => createGreeting()} className='w-full md:w-[25%] lg:w-[15%] bg-custom-white-md text-white font-[Cinzel] text-2xl px-4 py-2 rounded-full'>Kirim</button>
@@ -72,7 +72,7 @@ export default function Ucapan() {
                                 <div key={i} className='bg-[#D9D9D9] w-[90%] px-[5%] mb-4 rounded p-4'>
                                     <div className='flex justify-between items-center mb-4'>
                                         <h4 className='text-sm'>From: {e?.nama_tamu}</h4>
-                                        <h4 className='text-sm bg-primary text-white px-3 py-[2px] rounded'>{e?.konfirmasi ? 'Hadir' : 'Tidak Hadir'}</h4>
+                                        <h4 className={`text-xs ${e?.konfirmasi ? 'bg-green-600' : 'bg-red-600'}  text-white px-3 py-[2px] rounded`}>{e?.konfirmasi ? 'Hadir' : 'Tidak Hadir'}</h4>
                                     </div>
                                     <p className='text-base font-medium'>
                                         {e?.pesan}
