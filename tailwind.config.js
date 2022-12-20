@@ -13,7 +13,7 @@ module.exports = {
         'secondary': '#'
       },
       backgroundColor: {
-        'custom-overlay': 'rgba(48, 66, 33, 0.5)',
+        'custom-overlay': 'rgba(11, 26, 35, 0.1)',
         'custom-secondary': 'rgba(152, 182, 110, 0.5)',
         'custom-white-sm': 'rgba(255, 255, 255, 0.1)',
         'custom-white-md': 'rgba(255, 255, 255, 0.3)'

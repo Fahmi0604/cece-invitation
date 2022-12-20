@@ -1,5 +1,7 @@
 import React, { lazy, useEffect, useRef, useState } from 'react'
 import Gift from './Gift'
+import { Context } from '../App'
+import { useContext } from 'react'
 
 const Pembukaan = lazy(() => import('./Pembukaan'))
 const Ayat = lazy(() => import('./Ayat'))
@@ -10,14 +12,15 @@ const Rsvp = lazy(() => import('./Rsvp'))
 const Protokol = lazy(() => import('./Protokol'))
 const Footer = lazy(() => import('./Footer'))
 
-export default function Main() {
+export default function Main({handleAudio}) {
 
     const bg1 = useRef(0);
     const bg2 = useRef(0);
     // const text = useRef(0);
-    const myAudio = useRef(null);
+    // const myAudio = useRef(null);
+    const { isAudio: isPlayingAudio, setIsAudio: setisPlayingAudio } = useContext(Context);
 
-    const [isPlayingAudio, setisPlayingAudio] = useState(true);
+    // const [isPlayingAudio, setisPlayingAudio] = useState(true);
 
     // useEffect(() => {
     //     const handleScroll = () => {
@@ -34,43 +37,43 @@ export default function Main() {
     //     return () => window.removeEventListener("scroll", handleScroll);
     // }, []);
 
-    useEffect(() => {
-        if (myAudio.current) {
-            // myAudio.current.play();
-            console.log('render');
-        }
-    }, [])
+    // useEffect(() => {
+    //     if (myAudio.current) {
+    //         myAudio.current.play();
+    //         console.log('render');
+    //     }
+    // }, [isPlayingAudio])
     
 
-    const handleAudio = () => {
-        if (myAudio && isPlayingAudio) {
-            myAudio.current.pause();
-            setisPlayingAudio(false)
-        } else {
-            myAudio.current.play();
-            setisPlayingAudio(true)
-        }
-    }
+    // const handleAudio = () => {
+    //     if (myAudio && isPlayingAudio) {
+    //         myAudio.current.pause();
+    //         setisPlayingAudio(false)
+    //     } else {
+    //         myAudio.current.play();
+    //         setisPlayingAudio(true)
+    //     }
+    // }
 
     return (
         <div className='min-h-[2500px]'>
-            <div className='fixed w-full top-0 flex justify-center z-[5] pt-4'>
-                <audio ref={myAudio} src="/assets/backsound.mp3" loop />
+            <div className='fixed w-full bottom-0 flex justify-end z-[10] pb-4 pr-4'>
+                {/* <audio ref={myAudio} src="./assets/backsound2.mp3" loop /> */}
                 <button onClick={() => handleAudio()} className="w-auto bg-transparent text-white border-none cursor-pointer">
-                    { isPlayingAudio ? (<svg id="btn-pause" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-14 h-14">
+                    { isPlayingAudio ? (<svg id="btn-pause" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-10 h-10">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9v6m-4.5 0V9M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>) :
-                    (<svg id="btn-play" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-14 h-14">
+                    (<svg id="btn-play" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-10 h-10">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
                     </svg>)}
                 </button>
             </div>
-            <section className='relative w-full h-[130vh] overflow-hidden flex flex-col justify-between items-center'>
-                <img src="/assets/home-mobile.webp" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] hidden md:block' />
-                <img src="/assets/home-mobile.webp" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] block md:hidden' />
+            <section className='relative w-full h-[110vh] overflow-hidden flex flex-col justify-between items-center'>
+                <img src="./assets/home-mobile.webp" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] hidden md:block' />
+                <img src="./assets/home-mobile.webp" alt="" className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-[1] block md:hidden' />
                 <div className="relative flex flex-col justify-center items-center mt-[10vh] md:mt-[8vh] z-[2]">
-                    <p className='text-[32px] md:text-4xl text-primary font-[Cinzel] mb-4'>The Wedding of</p>
+                    <p className='text-2xl md:text-4xl text-primary font-[Cinzel] mb-4'>The Wedding of</p>
                     <h1 className='hidden md:block text-primary text-9xl font-[Cinzel] text-center px-12 pb-1 md:pb-5 rounded-full'>Rio & Yenny</h1>
                     <h1 className='block md:hidden text-primary text-5xl font-[Cinzel] text-center px-4 rounded-full'>Rio <br/> & <br /> Yenny</h1>
                 </div>

@@ -4,7 +4,7 @@ import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 import LoadingSuspense from './pages/LoadingSuspense';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = lazy(() => import('./App'));
 const GenerateUrl = lazy(() => import('./pages/GenerateUrl'));
@@ -13,10 +13,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   <Suspense fallback={<LoadingSuspense />}>
-    <BrowserRouter>
+    <BrowserRouter basename='/ourstoRY-RioYenny'>
       <Routes>
-        <Route path='/ourstoRY-RioYenny/:nama' element={<App />} />
-        <Route path='/ourstoRY-RioYenny/generate' element={<GenerateUrl />} />
+        <Route path='/:nama' element={<App />} />
+        <Route path='/generate' element={<GenerateUrl />} />
       </Routes>
     </BrowserRouter>
   </Suspense>

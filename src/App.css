@@ -14,3 +14,30 @@ body {
 .custom-linear-gradient {
   background: linear-gradient(180deg, #314222 0%, #F2FFB9 100%);
 }
+
+.responsive-map-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-map-container iframe,   
+.responsive-map-container object,  
+.responsive-map-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.playfair-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.source-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif;
+}

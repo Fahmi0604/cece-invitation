@@ -37,7 +37,7 @@ Terima kasih banyak atas perhatiannya.`);
 
             daftar.forEach((e,i) => {
                 let msg;
-                msg = pesan.replace('[nama]', `${e}`).replace('[link-undangan]', `https://cece-invitation.vercel.app/${e}`)
+                msg = pesan.replace('[nama]', `${e}`).replace('[link-undangan]', `https://dejitaru-invite.com/ourstoRY-RioYenny/${e}`)
                 setListGenerated((prev) => [...prev,
                 {
                     id: i+1,
